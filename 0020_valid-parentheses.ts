@@ -8,15 +8,11 @@ function isValid(s: string): boolean {
     "[": "]",
   };
 
-  s.split("").forEach((item) => {
+  s.split("").some((item) => {
     if (BRACKETS[item]) {
       stack.push(item);
     } else {
-      if (stack.length === 0 || BRACKETS[stack.pop()] !== item) {
-        result = false;
-        break;
-      }
-    }
+      return (stack.length === 0 || BRACKETS[stack.pop()] !== item);
   });
 
   return result;
