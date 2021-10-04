@@ -14,4 +14,5 @@ function isValid(s: string): boolean {
       return stack.length === 0 || BRACKETS[stack.pop()] !== item;
     }
   });
+  return stack.length === 0;
 }
