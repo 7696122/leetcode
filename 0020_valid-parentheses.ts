@@ -1,5 +1,4 @@
 function isValid(s: string): boolean {
-  let result = false;
   const stack = [];
 
   const BRACKETS = {
@@ -15,6 +14,4 @@ function isValid(s: string): boolean {
       return stack.length === 0 || BRACKETS[stack.pop()] !== item;
     }
   });
-
-  return result;
 }
