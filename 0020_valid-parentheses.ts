@@ -18,6 +18,7 @@ function isValid(s: string): boolean {
         }
       }
     });
+    return true;
   } catch (e) {
     return false;
   }
