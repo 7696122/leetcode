@@ -10,6 +10,8 @@ function isValid(s: string): boolean {
   s.split("").forEach((item) => {
     if (item in BRACKETS) {
       stack.push(item);
+    } else {
+      BRACKETS[stack.pop()] === item;
     }
   });
 
