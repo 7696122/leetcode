@@ -1,1 +1,3 @@
-function isValid(s: string): boolean {}
+function isValid(s: string): boolean {
+
+};
