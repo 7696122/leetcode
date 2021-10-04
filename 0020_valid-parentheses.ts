@@ -20,6 +20,7 @@ function isValid(s: string): boolean {
     });
     return stack.length === 0;
   } catch (e) {
+    if (e !== Invalid) throw e;
     return false;
   }
 }
