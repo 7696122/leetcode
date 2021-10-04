@@ -9,7 +9,7 @@ function isValid(s: string): boolean {
   };
 
   try {
-    s.split("").some((item) => {
+    s.split("").forEach((item) => {
       if (BRACKETS[item]) {
         stack.push(item);
       } else {
