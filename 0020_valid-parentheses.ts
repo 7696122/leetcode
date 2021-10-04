@@ -1,5 +1,5 @@
 function isValid(s: string): boolean {
-  let Invalid = new Error('Invalid')
+  let Invalid = new Error('Invalid');
   const stack = [];
 
   const BRACKETS = {
