@@ -7,5 +7,7 @@ function isValid(s: string): boolean {
     "[": "]",
   };
 
+  s.includes("(");
+
   return result;
 }
