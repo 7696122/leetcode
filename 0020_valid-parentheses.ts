@@ -9,7 +9,9 @@ function isValid(s: string): boolean {
     "[": "]",
   };
 
-  s.forEach((item) => stack.push(item));
+  s.forEach((item) => {
+    stack.push(item);
+  });
 
   return result;
 }
