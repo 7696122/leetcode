@@ -12,7 +12,8 @@ function isValid(s: string): boolean {
     if (BRACKETS[item]) {
       stack.push(item);
     } else {
-      return (stack.length === 0 || BRACKETS[stack.pop()] !== item);
+      return stack.length === 0 || BRACKETS[stack.pop()] !== item;
+    }
   });
 
   return result;
