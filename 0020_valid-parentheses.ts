@@ -13,8 +13,8 @@ function isValid(s: string): boolean {
       if (BRACKETS[item]) {
         stack.push(item);
       } else {
-        if(stack.length === 0 || BRACKETS[stack.pop()] !== item) {
-        throw Invalid;
+        if (stack.length === 0 || BRACKETS[stack.pop()] !== item) {
+          throw Invalid;
         }
       }
     });
