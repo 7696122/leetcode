@@ -8,7 +8,7 @@ function isValid(s: string): boolean {
     "[": "]",
   };
 
-  return s.split("").some((item) => {
+  s.split("").some((item) => {
     if (BRACKETS[item]) {
       stack.push(item);
     } else {
