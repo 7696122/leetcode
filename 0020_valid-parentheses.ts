@@ -13,10 +13,7 @@ function isValid(s: string): boolean {
       stack.push(item);
     } else {
       let pair = stack.pop();
-      if (!!pair && BRACKETS[pair] === item) {
-      } else {
-        return false;
-      }
+      !(!!pair && BRACKETS[pair] === item);
     }
   });
   return stack.length === 0 && result;
