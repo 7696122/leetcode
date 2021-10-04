@@ -10,8 +10,12 @@ function isValid(s: string): boolean {
   };
 
   s.split("").forEach((item) => {
-    stack.includes(item) || stack.push(item);
+    if (!stack.includes(item)) {
+      stack.push(item);
+    } else {
+      BRACKETS[item];
+    }
   });
 
-  return result;
+  return result.length === 0;
 }
