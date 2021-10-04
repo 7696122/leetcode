@@ -10,7 +10,7 @@ function isValid(s: string): boolean {
   };
 
   s.forEach((item) => {
-    stack.push(item);
+    !stack.includes(item) && stack.push(item);
   });
 
   return result;
