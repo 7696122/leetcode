@@ -7,15 +7,7 @@ function isValid(s: string): boolean {
     "[": "]",
   };
 
-  s.split("").forEach((item) => {
-    if (!stack.includes(item)) {
-      if (BRACKETS[item]) {
-        stack.push(item);
-      }
-    } else {
-      BRACKETS[item];
-    }
-  });
+  s.split("").forEach((item) => {});
 
   return stack.length === 0;
 }
