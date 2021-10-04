@@ -1,6 +1,4 @@
 function isValid(s: string): boolean {
-  let result = false;
-
   const stack = [];
 
   const BRACKETS = {
@@ -17,5 +15,5 @@ function isValid(s: string): boolean {
     }
   });
 
-  return result.length === 0;
+  return stack.length === 0;
 }
