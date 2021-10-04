@@ -1,4 +1,5 @@
 function isValid(s: string): boolean {
+  let Invalid = new Error('Invalid')
   const stack = [];
 
   const BRACKETS = {
@@ -7,12 +8,13 @@ function isValid(s: string): boolean {
     "[": "]",
   };
 
-  s.split("").some((item) => {
-    if (BRACKETS[item]) {
-      stack.push(item);
-    } else {
-      return stack.length === 0 || BRACKETS[stack.pop()] !== item;
-    }
-  });
-  return stack.length === 0;
+  try {
+    s.split("").some((item) => {
+      if (BRACKETS[item]) {
+        stack.push(item);
+      } else {
+        throw stack.length === 0 || BRACKETS[stack.pop()] !== item;
+      }
+    });
+  }
 }
