@@ -17,6 +17,7 @@ function isValid(s: string): boolean {
       }
     }
   });
+
   // try {
   //   s.split("").forEach((item) => {
   //     if (BRACKETS[item]) {
