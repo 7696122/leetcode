@@ -3,6 +3,7 @@ function isValid(s: string): boolean {
   const brackets = {
     "(": ")",
     "{": "}",
+    "[": "]",
   };
 
   return result;
