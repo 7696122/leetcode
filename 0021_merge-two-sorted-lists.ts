@@ -42,7 +42,7 @@ function mergeTwoLists(
     head = head.next;
   }
 
-  head.next = l1 || l2;
+  // head.next = l1 || l2;
 
   return sentinel.next;
 }
