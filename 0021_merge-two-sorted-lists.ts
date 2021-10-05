@@ -23,6 +23,7 @@ function mergeTwoLists(
   //   l2.next = mergeTwoLists(l2.next, l1);
   //   return l2;
   // }
+
   const sentinel = {
     val: -1,
     next: null,
