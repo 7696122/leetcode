@@ -10,12 +10,4 @@
  * }
  */
 
-function deleteDuplicates(head: ListNode | null): ListNode | null {
-  while (head.next !== null) {
-    if (head.val === head.next.val) {
-      head = deleteDuplicates(head.next);
-    } else {
-      head;
-    }
-  }
-}
+function deleteDuplicates(head: ListNode | null): ListNode | null {}
