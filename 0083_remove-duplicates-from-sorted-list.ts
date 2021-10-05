@@ -10,4 +10,6 @@
  * }
  */
 
-function deleteDuplicates(head: ListNode | null): ListNode | null {}
+function deleteDuplicates(head: ListNode | null): ListNode | null {
+
+};
