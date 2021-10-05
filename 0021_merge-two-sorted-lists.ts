@@ -24,7 +24,7 @@ function mergeTwoLists(
   //   return l2;
   // }
 
-  const sentinel: ListNode = {
+  const sentinel: ListNode = new ListNode {
     val: -1,
     next: null,
   };
