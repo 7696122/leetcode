@@ -15,5 +15,10 @@ function mergeTwoLists(
   l2: ListNode | null
 ): ListNode | null {
   const result: ListNode = null;
+  if (l1 === null) return l2;
+  if (l2 === null) return l1;
+  if (l1.value < l2.value) {
+    l1.next = mergeTwoLists(l1, l2);
+  }
   return result;
 }
