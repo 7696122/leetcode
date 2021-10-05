@@ -31,7 +31,7 @@ function mergeTwoLists(
 
   let head = sentinel;
   while (l1 && l2) {
-    if (l1.val > l1.val) {
+    if (l1.val < l1.val) {
       head.next = l2;
       l2 = l2.next;
     } else {
