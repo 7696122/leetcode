@@ -11,12 +11,12 @@
  */
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
-  const sentinel = head;
+  let sentinel = head;
   while (sentinel.next) {
     if (head.val === head.next.val) {
       sentinel.next = head.next.next;
     } else {
-      sentinel.next = head.next;
+      sentinel = head.next;
     }
   }
   return sentinel;
