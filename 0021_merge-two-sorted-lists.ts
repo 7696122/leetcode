@@ -24,10 +24,10 @@ function mergeTwoLists(
   //   return l2;
   // }
 
-  const sentinel: ListNode = new ListNode {
+  const sentinel: ListNode = new ListNode({
     val: -1,
     next: null,
-  };
+  });
 
   let head: ListNode = sentinel;
   while (l1 && l2) {
