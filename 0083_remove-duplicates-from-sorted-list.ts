@@ -12,5 +12,6 @@
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
   const sentinel = { val: -1, next: null };
+  let head = sentinel;
   while (head.next !== null) {}
 }
