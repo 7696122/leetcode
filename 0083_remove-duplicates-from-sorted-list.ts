@@ -19,5 +19,5 @@ function deleteDuplicates(head: ListNode | null): ListNode | null {
       sentinel = sentinel.next;
     }
   }
-  return sentinel;
+  return head;
 }
