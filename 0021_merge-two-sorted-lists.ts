@@ -23,7 +23,6 @@ function mergeTwoLists(
   //   l2.next = mergeTwoLists(l2.next, l1);
   //   return l2;
   // }
-
   const sentinel = {
     val: -1,
     next: null,
@@ -31,7 +30,7 @@ function mergeTwoLists(
 
   let head = sentinel;
   while (l1 && l2) {
-    if (l1.val > l1.val) {
+    if (l1.val > l2.val) {
       head.next = l2;
       l2 = l2.next;
     } else {
