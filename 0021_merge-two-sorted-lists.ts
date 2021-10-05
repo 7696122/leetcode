@@ -13,4 +13,6 @@
 function mergeTwoLists(
   l1: ListNode | null,
   l2: ListNode | null
-): ListNode | null {}
+): ListNode | null {
+  const result: ListNode = null;
+}
