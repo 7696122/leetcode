@@ -44,5 +44,5 @@ function mergeTwoLists(
 
   head.next = l1 || l2;
 
-  return sentinel.next;
+  return head.next;
 }
