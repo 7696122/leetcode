@@ -16,7 +16,7 @@ function deleteDuplicates(head: ListNode | null): ListNode | null {
     if (sentinel.val === sentinel.next.val) {
       sentinel.next = sentinel.next.next;
     } else {
-      sentinel = head.next;
+      sentinel = sentinel.next;
     }
   }
   return sentinel;
