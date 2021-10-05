@@ -29,7 +29,7 @@ function mergeTwoLists(
     next: null,
   };
 
-  let head = sentinel;
+  let head: ListNode = sentinel;
   while (l1 && l2) {
     if (l1.val < l2.val) {
       head.next = l1;
