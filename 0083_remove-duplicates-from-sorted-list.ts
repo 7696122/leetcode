@@ -11,7 +11,15 @@
  */
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
-  let sentinel = head;
+  // let sentinel = head;
+  // while (sentinel !== null && sentinel.next !== null) {
+  //   if (sentinel.val === sentinel.next.val) {
+  //     sentinel.next = sentinel.next.next;
+  //   } else {
+  //     sentinel = sentinel.next;
+  //   }
+  // }
+
   while (sentinel !== null && sentinel.next !== null) {
     if (sentinel.val === sentinel.next.val) {
       sentinel.next = sentinel.next.next;
