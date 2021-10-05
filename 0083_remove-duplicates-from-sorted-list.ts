@@ -11,5 +11,6 @@
  */
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
-  if (head === null) return;
+  if (head.next != null) {
+  }
 }
