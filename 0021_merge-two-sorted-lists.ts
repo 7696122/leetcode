@@ -15,4 +15,5 @@ function mergeTwoLists(
   l2: ListNode | null
 ): ListNode | null {
   const result: ListNode = null;
+  return result;
 }
