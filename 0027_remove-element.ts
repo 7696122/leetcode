@@ -4,5 +4,5 @@ function removeElement(nums: number[], val: number): number {
     nums[i] = filtered[i] ? filtered[i] : null;
   });
 
-  return nums.length;
+  return filtered.length;
 }
