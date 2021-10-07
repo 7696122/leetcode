@@ -4,7 +4,6 @@ function removeElement(nums: number[], val: number): number {
     .forEach((num, i) => {
       nums[i] = num;
     });
-  // nums[0] = 2;
-  // nums[1] = 2;
+
   return nums.length;
 }
