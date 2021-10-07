@@ -1,9 +1,9 @@
 function removeElement(nums: number[], val: number): number {
-  nums
-    .filter((num) => num !== val)
-    .forEach((num, i) => {
-      nums[i] = num;
-    });
+  const filtered = nums.filter((num) => num !== val);
+
+  nums.forEach((num, i) => {
+    nums[i] = num;
+  });
 
   return nums.length;
 }
