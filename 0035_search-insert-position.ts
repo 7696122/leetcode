@@ -6,4 +6,5 @@ function searchInsert(nums: number[], target: number): number {
       return true;
     }
   });
+  return ret;
 }
