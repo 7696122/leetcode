@@ -6,8 +6,8 @@ function searchInsert(nums: number[], target: number): number {
 
   nums.every((num, index) => {
     if (num > target) {
-      ret = index;
     } else {
+      ret = index;
       return true;
     }
   });
