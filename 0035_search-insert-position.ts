@@ -10,7 +10,7 @@ function searchInsert(nums: number[], target: number): number {
       ret = ++index;
       return false;
     } else {
-      return false;
+      return true;
     }
   });
   return ret;
