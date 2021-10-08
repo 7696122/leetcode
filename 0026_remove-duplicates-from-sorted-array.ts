@@ -1,1 +1,3 @@
-function removeDuplicates(nums: number[]): number {}
+function removeDuplicates(nums: number[]): number {
+  nums.filter((item, index) => nums.indexOf(item) === index);
+}
