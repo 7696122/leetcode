@@ -1,7 +1,8 @@
 function strStr(haystack: string, needle: string): number {
+  let ret = -1;
   if (needle.length === 0) return 0;
   let point = 0;
-  haystack.forEach((char, index) => {
-    let start = haystack.indexOf(char);
+  needle.forEach((ch, i) => {
+    haystack.indexOf;
   });
 }
