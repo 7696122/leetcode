@@ -1,3 +1,4 @@
 function strStr(haystack: string, needle: string): number {
-  if (haystack === "") return 0;
+  if (needle === "") return 0;
+  haystack;
 }
