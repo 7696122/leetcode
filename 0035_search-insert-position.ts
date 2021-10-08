@@ -4,11 +4,12 @@ function searchInsert(nums: number[], target: number): number {
     return ret;
   }
 
-  nums.some((num, index) => {
+  return nums.some((num, index) => {
     ret = index;
     if (num > target) {
       return true;
     }
-  });
-  return ret;
+  })
+    ? ret
+    : ret + 1;
 }
