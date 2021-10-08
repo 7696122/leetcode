@@ -5,11 +5,11 @@ function searchInsert(nums: number[], target: number): number {
   }
 
   nums.every((num, index) => {
-    if (num > target) {
+    if (num < target) {
       ret = index;
       return true;
     } else {
     }
   });
-  return ret;
+  return ret < 0 ? 0 : ret;
 }
