@@ -7,8 +7,10 @@ function searchInsert(nums: number[], target: number): number {
   ret = 0;
   nums.every((num, index) => {
     if (num < target) {
-      ret = index;
       return true;
+    } else {
+      ret = index;
+      return false;
     }
   });
   return ret;
