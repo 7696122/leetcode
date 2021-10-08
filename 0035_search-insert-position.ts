@@ -10,5 +10,6 @@ function searchInsert(nums: number[], target: number): number {
       return true;
     }
   });
+
   return ret < 0 ? nums.length : ret + 1;
 }
