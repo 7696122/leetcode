@@ -4,6 +4,9 @@ function searchInsert(nums: number[], target: number): number {
     if (num <= target) {
       ret = index;
       return true;
+    } else {
+      ret = index - 1;
+      return false;
     }
   });
   return ret;
