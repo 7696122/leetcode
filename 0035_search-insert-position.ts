@@ -4,7 +4,7 @@ function searchInsert(nums: number[], target: number): number {
     return ret;
   }
 
-  nums.every((num, index) => {
+  nums.some((num, index) => {
     ret = index;
     if (num > target) {
       return true;
