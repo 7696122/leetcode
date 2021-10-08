@@ -8,7 +8,6 @@ function searchInsert(nums: number[], target: number): number {
     if (num < target) {
       ret = index;
       return true;
-    } else {
     }
   });
   return ret < 0 ? nums.length : ret + 1;
