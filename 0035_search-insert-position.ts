@@ -10,5 +10,5 @@ function searchInsert(nums: number[], target: number): number {
       return true;
     }
   });
-  return ret > 0 ? ret + 1 : 0;
+  return ret > 0 ? ret : 0;
 }
