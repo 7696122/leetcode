@@ -1,5 +1,5 @@
 function removeDuplicates(nums: number[]): number {
-  const filtered = nums.filter((item, index) => nums.indexOf(item) === index);
+  const filtered = [...new Set(nums)];
   nums.forEach((item, index, items) => {
     nums[index] = items[index] ? items[index] : undefined;
   });
