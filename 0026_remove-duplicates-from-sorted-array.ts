@@ -4,5 +4,5 @@ function removeDuplicates(nums: number[]): number {
     .forEach((item, index, items) => {
       nums[index] = items[index] ? items[index] : undefined;
     });
-  return unionNumbers.length;
+  return nums.length;
 }
