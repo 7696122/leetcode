@@ -5,7 +5,7 @@ function searchInsert(nums: number[], target: number): number {
       ret = index;
       return true;
     } else {
-      ret = index - 1;
+      ret = index + 1;
       return false;
     }
   });
