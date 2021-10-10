@@ -3,6 +3,11 @@ function maxSubArray(nums: number[]): number {
     max_so_far = Number.MIN_VALUE,
     arr = nums;
 
+  nums.forEach((num, i) => {
+    if (num <= max_ending_here + num) {
+      max_ending_here += num;
+    }
+  });
   for (let i = 0; i < nums.length; i++) {
     // include current element to previous subarray only
     // when it can add to a bigger number than itself.
