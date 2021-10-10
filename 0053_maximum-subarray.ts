@@ -13,5 +13,6 @@ function maxSubArray(nums: number[]): number {
       max_so_far = max_ending_here;
     }
   });
+
   return max_so_far;
 }
