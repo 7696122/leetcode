@@ -1,10 +1,9 @@
 function maxSubArray(nums: number[]): number {
   let max_ending_here = 0,
     max_so_far = Number.MIN_VALUE,
-    size = nums.length,
     arr = nums;
 
-  for (let i = 0; i < size; i++) {
+  for (let i = 0; i < nums.length; i++) {
     // include current element to previous subarray only
     // when it can add to a bigger number than itself.
     if (arr[i] <= max_ending_here + arr[i]) {
