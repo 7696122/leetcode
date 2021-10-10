@@ -1,1 +1,4 @@
-function maxSubArray(nums: number[]): number {}
+function maxSubArray(nums: number[]): number {
+  let ret = 0;
+  return ret;
+}
