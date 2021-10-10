@@ -3,8 +3,5 @@ function maxSubArray(nums: number[]): number {
   let temp = 0;
   let i = 0;
   let j = 0;
-  nums.forEach((item, i) => {
-    if (i == j) return;
-  });
   return;
 }
