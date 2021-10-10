@@ -6,6 +6,8 @@ function maxSubArray(nums: number[]): number {
   nums.forEach((num, i) => {
     if (num <= max_ending_here + num) {
       max_ending_here += num;
+    } else {
+      max_ending_here = num;
     }
   });
   for (let i = 0; i < nums.length; i++) {
