@@ -1,6 +1,6 @@
 function maxSubArray(nums: number[]): number {
   let maxEndingHere = 0,
-    max_so_far = Number.MIN_VALUE,
+    maxSoFar = Number.MIN_VALUE,
     arr = nums;
 
   nums.forEach((num, i) => {
@@ -9,10 +9,10 @@ function maxSubArray(nums: number[]): number {
     } else {
       maxEndingHere = num;
     }
-    if (maxEndingHere > max_so_far) {
-      max_so_far = maxEndingHere;
+    if (maxEndingHere > maxSoFar) {
+      maxSoFar = maxEndingHere;
     }
   });
 
-  return max_so_far;
+  return maxSoFar;
 }
