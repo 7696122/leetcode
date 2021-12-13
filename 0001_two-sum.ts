@@ -1,4 +1,4 @@
-import { map } from "lodash";
+import { forEach } from "lodash";
 
 function twoSum(nums: number[], target: number): number[] {
   let point = -1;
